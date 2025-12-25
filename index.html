@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Christmas Quest 🎄</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<!-- Street Lights -->
+<div class="street-light left"></div>
+<div class="street-light right"></div>
+
+<!-- Snowfall -->
+<div class="snow-container" id="snow-container"></div>
+
+<div class="container" id="quiz">
+  <h1>Anh iu mở quà nìee</h1>
+  </h1>
+
+  
+  <!-- Advent Calendar -->
+  <div class="advent-calendar">
+    <div class="advent-grid" id="advent-grid"></div>
+  </div>
+</div>
+
+<!-- Question Modal -->
+<div class="modal hidden" id="question-modal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="closeModal()">&times;</button>
+    <h2 id="modal-question"></h2>
+    <div class="modal-body">
+      <input type="text" id="modal-answer" placeholder="Type your answer..." autofocus>
+      <button class="submit-btn" id="modal-submit" onclick="submitAnswer()">Trả bàii ✨</button>
+      <p class="feedback" id="modal-feedback"></p>
+    </div>
+  </div>
+</div>
+
+<div class="container hidden" id="letter">
+  <h1>💌 Embe yêu Giáng sinh vui vẻ</h1>
+  
+  <!-- Final Christmas Tree -->
+  <div class="final-tree-container">
+    <div class="tree-wrapper-final">
+      <img src="tree.png" alt="Christmas Tree" class="tree final-tree" onclick="showLetter()" style="cursor: pointer;">
+    </div>
+  </div>
+</div>
+
+<!-- Letter Modal -->
+<div class="modal hidden" id="letter-modal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="document.getElementById('letter-modal').classList.add('hidden')">&times;</button>
+    <div class="letter-envelope">
+      <div class="letter-paper">
+        <div class="letter-header">
+          <p class="letter-date">25 December 2025</p>
+          <p class="letter-greeting">Gửi babi yêu,</p>
+        </div>
+        <div class="letter-body">
+          <p>
+            Vậy là sắp tới cuối năm gòi nhỉ, thời gian qua, em muốn cảm ơn embe vì thời gian qua đã iu thương quan tâm em. Mặc dù là có nhìu lúc mood em bất ổn, nhìu khi em siu bận, nhưng mà anh vẫn ở đây với em. Em thấy rấc là cảm ơn.  
+            Babi yêu của em thời gian qua đã cố gắng nhìu gòi, em biết là ở một mình vừa học vừa làm ở một nơi siuu xa không phải dễ dàng, nhưng anh luôn cố gắng update bản thân, chăm sóc bản thân và vẫn luôn giữ năng lượng cho emm.  
+            Em không nghĩ là anh sẽ thành một phần trong routine cuộc sống của em nhìu như vậy, cảm ơn anh vì đã là một phần không nhỏ trong tuổi 19 của em.
+          </p>
+          <p>
+            Mong năm sau, embe sẽ tiếp tục chăm sóc bản thân, hong ngủ muộn, ăn nhìu rau, tiếp tục cố gắng mỗi ngày. Anh đã nỗ lực gòi, em tự hào về anh.
+            Cảm ơn yêu vì đã làm em cười siu nhìuu, cũng làm em khóc huhu. :( Nhưng mà anh luôn khiến em cảm thấy siu yên tâm, kiểu dù sao cũng có anh support em, có anh ở đây với em. Zị nên làa ...
+          </p>
+          <p class="letter-question">
+            🎄 embe dáng xinh đi nhà nghỉ với em nhaa?
+          </p>
+        </div>
+        <div class="letter-signature">
+          <p>with love,</p>
+          <p class="letter-name">ếch iu </p>
+        </div>
+        <button class="letter-button" onclick="yes()"> chỉ có một lựa chọn là uki </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Picture Modal -->
+<div class="modal hidden" id="picture-modal">
+  <div class="modal-content picture-modal-content">
+    <button class="close-btn" onclick="closePictureModal()">&times;</button>
+    <div class="picture-container">
+      <img id="modal-picture" src="" alt="Memory">
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<footer class="site-footer">
+  <p>&copy; 2025 ếch iu. All rights reserved.</p>
+</footer>
+</body>
