@@ -26,7 +26,7 @@ function createSnowfall() {
 const QUESTIONS = [
   {
     question: "Số đo 3 vòng của em theo thứ tự từ trên xúngg",
-    answers: ["83, 62, 90", "83, 62, 90", "83, 62, 90"], // Add more variations if needed: ["pizza", "pasta"]
+    answers: ["83, 62, 90", "83, 62, 90", "83, 62, 90", "83 62 90"], // Add more variations if needed: ["pizza", "pasta"]
     ornamentImage: "ornament1.png", // Replace with your image path
     finalImage: "photo1.jpg" // Replace with your photo path
   },
@@ -50,7 +50,7 @@ const QUESTIONS = [
   },
   {
     question: "Nhắn tin với em đầu tiên hôm nàoo?",
-    answers: ["31/06/2025", "01/07/2025"],
+    answers: ["31/05/2025", "01/06/2025", "01/6/2025", "31/05/2025", "01/06"],
     ornamentImage: "ornament5.png",
     finalImage: "photo5.jpg"
   },
@@ -62,7 +62,7 @@ const QUESTIONS = [
   },
   {
     question: "Em thích loài chó nào nhất zị?",
-    answers: ["Labrador", "labrador"],
+    answers: ["Labrador", "labrador", "chó labrador"],
     ornamentImage: "ornament7.png",
     finalImage: "photo7.jpg"
   },
